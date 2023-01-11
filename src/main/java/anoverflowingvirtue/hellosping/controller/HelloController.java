@@ -9,8 +9,8 @@ import org.springframework.web.service.annotation.GetExchange;
 @Controller
 public class HelloController {
     @GetMapping("hello")
-    public String hello(Model model){
-        model.addAttribute("data","hello!!");
+    public String hello(Model model) {
+        model.addAttribute("data", "hello!!");
 
         return "hello";
     }
